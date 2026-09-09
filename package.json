@@ -1,0 +1,16 @@
+{
+  "name": "paytm-wallet-r2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "pg": "^8.13.1",
+    "prom-client": "^15.1.3"
+  }
+}
