@@ -70,8 +70,8 @@ Replace this paragraph with an accurate personal account before submission. Sugg
 ## Deployment checklist
 
 1. Create a public repository under your own account and make normal, attributable commits as you build/review it.
-2. Provision a free managed PostgreSQL database and copy its connection URL into `DATABASE_URL` on a free container host.
-3. Deploy from the repository using the Dockerfile. Set `PORT` if the host requires it.
+2. In Render, choose **New → Blueprint**, select the repository, and approve the resources declared in `render.yaml`. It creates a free Docker web service and free Render Postgres database in Singapore, wiring the database connection string to `DATABASE_URL` without committing a secret.
+3. Wait for the deploy to pass `/healthz`, then copy its public `onrender.com` URL.
 4. Run `BASE_URL=https://your-service.example node scripts/burst.js` against the live URL.
 5. Put the live URL, repository URL, public log/viewing evidence, and metrics URL in your response to the recruiter.
 
