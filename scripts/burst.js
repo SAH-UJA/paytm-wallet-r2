@@ -14,6 +14,19 @@ async function api(path, { user, method = 'GET', body } = {}) {
   return { status: response.status, json };
 }
 function assert(condition, detail) { if (!condition) throw new Error(detail); }
+async function waitForService() {
+  const deadline = Date.now() + 45_000;
+  let lastError;
+  while (Date.now() < deadline) {
+    try {
+      const response = await fetch(`${base}/healthz`);
+      if (response.ok) return;
+      lastError = new Error(`healthz returned ${response.status}`);
+    } catch (error) { lastError = error; }
+    await new Promise((resolve) => setTimeout(resolve, 1_000));
+  }
+  throw new Error(`service did not become healthy within 45 seconds: ${lastError?.message || 'unknown error'}`);
+}
 async function wallet(user, balance) {
   const r = await api('/wallets', { user, method: 'POST', body: { initial_balance_paise: balance } });
   assert(r.status === 201 || r.status === 200, `wallet failed: ${JSON.stringify(r)}`);
@@ -25,7 +38,9 @@ async function balance(user, id) {
   return r.json.balance_paise;
 }
 
-console.log(`Running against ${base} (run ${run})`);
+console.log(`Waiting for ${base}/healthz (run ${run})`);
+await waitForService();
+console.log(`Running against ${base}`);
 
 // 1. Race-free get-or-create.
 const newUser = `race-${run}`;
