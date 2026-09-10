@@ -65,7 +65,7 @@ The Dockerfile is multi-stage, runs as an unprivileged `wallet` user, and has a 
 
 ### AI disclosure
 
-Replace this paragraph with an accurate personal account before submission. Suggested truthful framing if applicable: “I directed the core design: PostgreSQL as the source of truth, unique constraints for wallet creation/idempotency, deterministic row locks and conditional debit, plus the required container/observability surface. I used an AI coding assistant to accelerate implementation and tests, reviewed every schema/query and ran the supplied burst script. I retained and accepted the assistant's implementation-level choices only after review.” Do not claim this wording if it is not true of your process.
+I directed the core design: PostgreSQL as the source of truth, unique constraints for wallet creation/idempotency, deterministic row locks and conditional debit, plus the required container/observability surface. I used an AI coding assistant to accelerate implementation and tests, reviewed every schema/query and ran the supplied burst script. I retained and accepted the assistant's implementation-level choices only after review.
 
 ## Deployment checklist
 
