@@ -1,0 +1,130 @@
+2026-09-09T15:33:11.807065187Z ==> It looks like we don't have access to your repo, but we'll try to clone it anyway.
+2026-09-09T15:33:11.807081025Z ==> Cloning from https://github.com/SAH-UJA/paytm-wallet-r2
+2026-09-09T15:33:17.849824979Z ==> Checking out commit ca9311cf8a516535bd466ce45f53784495278bdd in branch main
+2026-09-09T15:33:19.110371159Z #1 [internal] load build definition from Dockerfile
+2026-09-09T15:33:19.266029155Z #1 transferring dockerfile: 654B done
+2026-09-09T15:33:19.266041223Z #1 DONE 0.0s
+2026-09-09T15:33:19.266042765Z 
+2026-09-09T15:33:19.266044698Z #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-09-09T15:33:20.384017899Z #2 ...
+2026-09-09T15:33:20.384034022Z 
+2026-09-09T15:33:20.384036296Z #3 [auth] library/node:pull render-prod/docker-mirror-repository/library/node:pull token for us-west1-docker.pkg.dev
+2026-09-09T15:33:20.384037997Z #3 DONE 0.0s
+2026-09-09T15:33:20.534297792Z 
+2026-09-09T15:33:20.53431799Z #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-09-09T15:33:24.638507456Z #2 DONE 5.5s
+2026-09-09T15:33:24.809302672Z 
+2026-09-09T15:33:24.809312031Z #4 [internal] load .dockerignore
+2026-09-09T15:33:24.809313944Z #4 transferring context: 78B done
+2026-09-09T15:33:24.809315343Z #4 DONE 0.0s
+2026-09-09T15:33:24.809316581Z 
+2026-09-09T15:33:24.809317903Z #5 [internal] load build context
+2026-09-09T15:33:24.809319371Z #5 transferring context: 59.48kB done
+2026-09-09T15:33:24.80932094Z #5 DONE 0.0s
+2026-09-09T15:33:24.809322179Z 
+2026-09-09T15:33:24.809324127Z #6 [deps 1/4] FROM docker.io/library/node:22-alpine@sha256:c610fcdfb1d5b4740dd70c284ed3cb16bb857e0f7166196e36a5501df7a3aa32
+2026-09-09T15:33:24.809326354Z #6 resolve docker.io/library/node:22-alpine@sha256:c610fcdfb1d5b4740dd70c284ed3cb16bb857e0f7166196e36a5501df7a3aa32 done
+2026-09-09T15:33:28.264601073Z #6 extracting sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4
+2026-09-09T15:33:28.415190946Z #6 extracting sha256:55afa1ecc21d2bb5e5045f32dafee56272ffd89860bac26f6c32123439af26a4 0.1s done
+2026-09-09T15:33:30.494238238Z #6 extracting sha256:efbef6f9e333972a10ca323e700496a64e7ddcc3a6725e6afbbae52e690f4a4a
+2026-09-09T15:33:31.226794865Z #6 extracting sha256:efbef6f9e333972a10ca323e700496a64e7ddcc3a6725e6afbbae52e690f4a4a 0.9s done
+2026-09-09T15:33:31.226808641Z #6 DONE 6.6s
+2026-09-09T15:33:31.457279556Z 
+2026-09-09T15:33:31.457297833Z #6 [deps 1/4] FROM docker.io/library/node:22-alpine@sha256:c610fcdfb1d5b4740dd70c284ed3cb16bb857e0f7166196e36a5501df7a3aa32
+2026-09-09T15:33:31.45730081Z #6 extracting sha256:a2980c1fee17dfd6263234b253955e0e9d5f38d47c0e71c001139897134899d0 0.0s done
+2026-09-09T15:33:31.457303437Z #6 extracting sha256:16da5a6403776464b5bf551ef294de57da242eac594527ea551a46e7f76ac2d6 done
+2026-09-09T15:33:31.45730548Z #6 DONE 6.6s
+2026-09-09T15:33:31.457306791Z 
+2026-09-09T15:33:31.457308481Z #7 [deps 2/4] WORKDIR /app
+2026-09-09T15:33:31.457309875Z #7 DONE 0.0s
+2026-09-09T15:33:31.457311078Z 
+2026-09-09T15:33:31.457312715Z #8 [deps 3/4] COPY package.json package-lock.json* ./
+2026-09-09T15:33:31.457317139Z #8 DONE 0.0s
+2026-09-09T15:33:31.457318408Z 
+2026-09-09T15:33:31.457320368Z #9 [runtime 3/6] RUN addgroup -S wallet && adduser -S wallet -G wallet
+2026-09-09T15:33:31.457321658Z #9 DONE 0.1s
+2026-09-09T15:33:31.457322816Z 
+2026-09-09T15:33:31.45732441Z #10 [deps 4/4] RUN npm ci --omit=dev
+2026-09-09T15:33:32.227603621Z #10 0.968 npm warn deprecated prom-client@15.1.3: prom-client has been replaced by @prometheus-io/client
+2026-09-09T15:33:32.515982704Z #10 1.257 
+2026-09-09T15:33:32.515993699Z #10 1.257 added 66 packages, and audited 67 packages in 1s
+2026-09-09T15:33:32.515995254Z #10 1.257 
+2026-09-09T15:33:32.515997326Z #10 1.257 19 packages are looking for funding
+2026-09-09T15:33:32.667941374Z #10 1.257   run `npm fund` for details
+2026-09-09T15:33:32.667962773Z #10 1.258 
+2026-09-09T15:33:32.667964496Z #10 1.258 found 0 vulnerabilities
+2026-09-09T15:33:32.667966202Z #10 1.258 npm notice
+2026-09-09T15:33:32.66796802Z #10 1.258 npm notice New major version of npm available! 10.9.8 -> 12.0.2
+2026-09-09T15:33:32.667969568Z #10 1.258 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+2026-09-09T15:33:32.667971255Z #10 1.258 npm notice To update run: npm install -g npm@12.0.2
+2026-09-09T15:33:32.667972498Z #10 1.258 npm notice
+2026-09-09T15:33:32.669631801Z #10 DONE 1.4s
+2026-09-09T15:33:32.789141523Z 
+2026-09-09T15:33:32.789157103Z #11 [runtime 4/6] COPY --from=deps --chown=wallet:wallet /app/node_modules ./node_modules
+2026-09-09T15:33:33.064993867Z #11 DONE 0.3s
+2026-09-09T15:33:33.227161179Z 
+2026-09-09T15:33:33.227175977Z #12 [runtime 5/6] COPY --chown=wallet:wallet package.json ./
+2026-09-09T15:33:33.2271778Z #12 DONE 0.0s
+2026-09-09T15:33:33.22717917Z 
+2026-09-09T15:33:33.227180619Z #13 [runtime 6/6] COPY --chown=wallet:wallet src ./src
+2026-09-09T15:33:33.227181989Z #13 DONE 0.0s
+2026-09-09T15:33:33.227183243Z 
+2026-09-09T15:33:33.227184808Z #14 exporting to image
+2026-09-09T15:33:33.227186342Z #14 exporting layers 0.1s done
+2026-09-09T15:33:33.381090076Z #14 pushing layers
+2026-09-09T15:33:35.601078897Z #14 pushing layers 2.4s done
+2026-09-09T15:33:35.847251029Z #14 DONE 2.6s
+2026-09-09T15:33:35.847257548Z 
+2026-09-09T15:33:35.847259345Z #15 exporting cache to registry
+2026-09-09T15:33:35.847260864Z #15 sending cache export
+2026-09-09T15:33:36.675631338Z #15 sending cache export 2.8s done
+2026-09-09T15:33:36.675640978Z #15 DONE 3.4s
+2026-09-09T15:33:39.04817946Z ==> Deploying...
+2026-09-09T15:33:39.266515599Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-09-09T15:33:49.644004344Z {"level":30,"time":1788968029643,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","msg":"Server listening at http://127.0.0.1:10000"}
+2026-09-09T15:33:49.644664572Z {"level":30,"time":1788968029643,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","msg":"Server listening at http://10.31.187.40:10000"}
+2026-09-09T15:33:50.384681972Z {"level":30,"time":1788968030384,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-1","req":{"method":"HEAD","url":"/","host":"paytm-wallet-r2.onrender.com","remoteAddress":"127.0.0.1","remotePort":39900},"msg":"incoming request"}
+2026-09-09T15:33:50.412600173Z {"level":40,"time":1788968030387,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-1","correlation_id":"07b4c1fd-792b-481a-8294-4d71c1032822","err":{"type":"Error","message":"Use Authorization: Bearer <user-id>","stack":"Error: Use Authorization: Bearer <user-id>\n    at error (file:///app/src/server.js:46:13)\n    at Object.<anonymous> (file:///app/src/server.js:77:72)\n    at hookIterator (/app/node_modules/fastify/lib/hooks.js:412:10)\n    at next (/app/node_modules/fastify/lib/hooks.js:242:18)\n    at hookRunner (/app/node_modules/fastify/lib/hooks.js:264:5)\n    at validationCompleted (/app/node_modules/fastify/lib/handle-request.js:151:5)\n    at preValidationCallback (/app/node_modules/fastify/lib/handle-request.js:135:5)\n    at handler (/app/node_modules/fastify/lib/handle-request.js:105:7)\n    at Object.handleRequest (/app/node_modules/fastify/lib/handle-request.js:36:5)\n    at runPreParsing (/app/node_modules/fastify/lib/route.js:661:19)","statusCode":401,"code":"UNAUTHORIZED"},"event":"request_failed","msg":"Use Authorization: Bearer <user-id>"}
+2026-09-09T15:33:50.412618323Z {"level":30,"time":1788968030412,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-1","res":{"statusCode":401},"responseTime":26.723257999999987,"msg":"request completed"}
+2026-09-09T15:33:58.870020348Z {"level":30,"time":1788968038869,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-2","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":43478},"msg":"incoming request"}
+2026-09-09T15:33:58.874244831Z {"level":30,"time":1788968038873,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-2","res":{"statusCode":200},"responseTime":3.8112830000009126,"msg":"request completed"}
+2026-09-09T15:33:58.875790883Z {"level":30,"time":1788968038875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-3","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":43492},"msg":"incoming request"}
+2026-09-09T15:33:58.878640129Z {"level":30,"time":1788968038878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-3","res":{"statusCode":200},"responseTime":2.6198499999991327,"msg":"request completed"}
+2026-09-09T15:33:59.747672835Z ==> Your service is live 🎉
+2026-09-09T15:33:59.830190837Z {"level":30,"time":1788968039829,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-4","req":{"method":"GET","url":"/","host":"paytm-wallet-r2.onrender.com","remoteAddress":"127.0.0.1","remotePort":56898},"msg":"incoming request"}
+2026-09-09T15:33:59.831595825Z {"level":40,"time":1788968039830,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-4","correlation_id":"d5af9f92-0d74-42c7-982c-d87ab1f4ac1c","err":{"type":"Error","message":"Use Authorization: Bearer <user-id>","stack":"Error: Use Authorization: Bearer <user-id>\n    at error (file:///app/src/server.js:46:13)\n    at Object.<anonymous> (file:///app/src/server.js:77:72)\n    at hookIterator (/app/node_modules/fastify/lib/hooks.js:412:10)\n    at next (/app/node_modules/fastify/lib/hooks.js:242:18)\n    at hookRunner (/app/node_modules/fastify/lib/hooks.js:264:5)\n    at validationCompleted (/app/node_modules/fastify/lib/handle-request.js:151:5)\n    at preValidationCallback (/app/node_modules/fastify/lib/handle-request.js:135:5)\n    at handler (/app/node_modules/fastify/lib/handle-request.js:105:7)\n    at Object.handleRequest (/app/node_modules/fastify/lib/handle-request.js:36:5)\n    at runPreParsing (/app/node_modules/fastify/lib/route.js:661:19)","statusCode":401,"code":"UNAUTHORIZED"},"event":"request_failed","msg":"Use Authorization: Bearer <user-id>"}
+2026-09-09T15:33:59.831628336Z {"level":30,"time":1788968039831,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-4","res":{"statusCode":401},"responseTime":0.8834740000002057,"msg":"request completed"}
+2026-09-09T15:33:59.972744974Z ==> 
+2026-09-09T15:33:59.978972919Z ==> ///////////////////////////////////////////////////////////
+2026-09-09T15:33:59.986132528Z ==> 
+2026-09-09T15:33:59.99231759Z ==> Available at your primary URL https://paytm-wallet-r2.onrender.com
+2026-09-09T15:33:59.999821002Z ==> 
+2026-09-09T15:34:00.005232562Z ==> ///////////////////////////////////////////////////////////
+2026-09-09T15:34:03.876394107Z {"level":30,"time":1788968043876,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-5","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":43496},"msg":"incoming request"}
+2026-09-09T15:34:03.879641414Z {"level":30,"time":1788968043878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-5","res":{"statusCode":200},"responseTime":2.153018000000884,"msg":"request completed"}
+2026-09-09T15:34:08.869750177Z {"level":30,"time":1788968048869,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-6","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":47308},"msg":"incoming request"}
+2026-09-09T15:34:08.871976717Z {"level":30,"time":1788968048871,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-6","res":{"statusCode":200},"responseTime":2.005033999997977,"msg":"request completed"}
+2026-09-09T15:34:08.875709217Z {"level":30,"time":1788968048875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-7","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":47316},"msg":"incoming request"}
+2026-09-09T15:34:08.878191994Z {"level":30,"time":1788968048878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-7","res":{"statusCode":200},"responseTime":2.3171430000002147,"msg":"request completed"}
+2026-09-09T15:34:13.876188026Z {"level":30,"time":1788968053875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-8","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":47326},"msg":"incoming request"}
+2026-09-09T15:34:13.87930211Z {"level":30,"time":1788968053879,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-8","res":{"statusCode":200},"responseTime":2.970159999997122,"msg":"request completed"}
+2026-09-09T15:34:18.876040885Z {"level":30,"time":1788968058875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-9","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":34080},"msg":"incoming request"}
+2026-09-09T15:34:18.879002994Z {"level":30,"time":1788968058878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-9","res":{"statusCode":200},"responseTime":2.7507239999977173,"msg":"request completed"}
+2026-09-09T15:34:23.876380447Z {"level":30,"time":1788968063876,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-a","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":34086},"msg":"incoming request"}
+2026-09-09T15:34:23.878817952Z {"level":30,"time":1788968063878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-a","res":{"statusCode":200},"responseTime":2.179817999996885,"msg":"request completed"}
+2026-09-09T15:34:28.875967079Z {"level":30,"time":1788968068875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-b","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":51364},"msg":"incoming request"}
+2026-09-09T15:34:28.87824272Z {"level":30,"time":1788968068878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-b","res":{"statusCode":200},"responseTime":2.1134670000028564,"msg":"request completed"}
+2026-09-09T15:34:33.875812604Z {"level":30,"time":1788968073875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-c","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":51368},"msg":"incoming request"}
+2026-09-09T15:34:33.877818868Z {"level":30,"time":1788968073877,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-c","res":{"statusCode":200},"responseTime":1.9016599999958999,"msg":"request completed"}
+2026-09-09T15:34:38.869130154Z {"level":30,"time":1788968078868,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-d","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":45752},"msg":"incoming request"}
+2026-09-09T15:34:38.871383255Z {"level":30,"time":1788968078871,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-d","res":{"statusCode":200},"responseTime":2.1388870000009774,"msg":"request completed"}
+2026-09-09T15:34:38.875005542Z {"level":30,"time":1788968078874,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-e","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":45756},"msg":"incoming request"}
+2026-09-09T15:34:38.876739369Z {"level":30,"time":1788968078876,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-e","res":{"statusCode":200},"responseTime":1.5469819999998435,"msg":"request completed"}
+2026-09-09T15:34:43.87533926Z {"level":30,"time":1788968083875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-f","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":45772},"msg":"incoming request"}
+2026-09-09T15:34:43.877228871Z {"level":30,"time":1788968083877,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-f","res":{"statusCode":200},"responseTime":1.7918680000002496,"msg":"request completed"}
+2026-09-09T15:34:48.876530059Z {"level":30,"time":1788968088876,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-g","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":46340},"msg":"incoming request"}
+2026-09-09T15:34:48.879063937Z {"level":30,"time":1788968088878,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-g","res":{"statusCode":200},"responseTime":2.308712000005471,"msg":"request completed"}
+2026-09-09T15:34:53.875173889Z {"level":30,"time":1788968093874,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-h","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":46354},"msg":"incoming request"}
+2026-09-09T15:34:53.877061909Z {"level":30,"time":1788968093876,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-h","res":{"statusCode":200},"responseTime":1.7716579999978421,"msg":"request completed"}
+2026-09-09T15:34:58.875690349Z {"level":30,"time":1788968098875,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-i","req":{"method":"GET","url":"/healthz","host":"paytm-wallet-r2.onrender.com","remoteAddress":"10.209.27.61","remotePort":34558},"msg":"incoming request"}
+2026-09-09T15:34:58.877688262Z {"level":30,"time":1788968098877,"pid":1,"hostname":"srv-dagnoch5efls73bbnjpg-hibernate-9d99f4bdc-6mv44","reqId":"req-i","res":{"statusCode":200},"responseTime":1.8281089999945834,"msg":"request completed"}

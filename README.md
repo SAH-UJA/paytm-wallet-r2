@@ -72,7 +72,7 @@ I directed the core design: PostgreSQL as the source of truth, unique constraint
 1. Create a public repository under your own account and make normal, attributable commits as you build/review it.
 2. In Render, choose **New → Blueprint**, select the repository, and approve the resources declared in `render.yaml`. It creates a free Docker web service and free Render Postgres database in Singapore, wiring the database connection string to `DATABASE_URL` without committing a secret.
 3. Wait for the deploy to pass `/healthz`, then copy its public `onrender.com` URL.
-4. Run `BASE_URL=https://your-service.example node scripts/burst.js` against the live URL.
+4. Run `BASE_URL=https://paytm-wallet-r2.onrender.com node scripts/burst.js` against the live URL.
 5. Put the live URL, repository URL, public log/viewing evidence, and metrics URL in your response to the recruiter.
 
 The last three steps require the candidate's own provider accounts and consent; they cannot be completed from this workspace.
